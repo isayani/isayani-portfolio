@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(235, 244, 241);
+    height: 80px;
+    width: 100%;
+
+}
+
+header h1 {
+    margin-left: 15px;
+    display: flex;
+    align-items:center;
+    height: 75px;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+nav {
+    height: 75px;
+    text-align: right;
+    margin-top: -40px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size:larger;
+}
+
+article {
+    display:block;
+    text-align: left;
+    margin: 375px 20%;
+    padding: 5px;
+}
+
+article h2 {
+    font-size: 65px;
+    letter-spacing: 10px;
+}
+
+article p {
+    padding: 2px;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+article a {
+    float: left;
+    margin-top: 5px;
+    padding: 2px;
+    color: gray;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+section {
+    display: inline-flex;
+    justify-content: left;
+    margin-left: 15px;
+    
+}
+
+/*need to get about border aligned*/
+div {
+    margin: 25px 250px;
+}
+
+div img {
+    display: block;
+    margin-left: 182px;
+    height: 200px;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+footer {
+    background-color: rgb(235, 244, 241);
+    height: 80px;
+    width: 100%;
+}
+
+footer h4 {
+    display: flex;
+    align-items:center;
+    height: 100%;
+    padding: 10px;
+    letter-spacing: .5px;
+}
+
+.headings {
+    width: 30%;
+    left: 0;
+    position: relative;
+    padding-right: 2%;
+    margin: 25px 0px;
+    font-size: 32px;
+    border-right: 5px solid rgb(235, 244, 241);
+}
+
+.content {
+    flex: 1;
+    right: 0;
+    position: relative;
+    padding-left: 2%;
+    text-align:left;
+    margin: 25px 10rem;
+}
+
+/*margin space under pr5 and change to flex?*/
+section li {
+    margin-bottom: 50px;
+    height: 150px;
+    width: 50%;
+    text-decoration: none;
+}
+
+section a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin-left: 45%;
+}
+
+#pr1 {
+    background-image: url("https://wallpaperaccess.com/full/1410228.jpg");
+    background-size:cover;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+#pr2 {
+    background-image: url("https://wallpaperaccess.com/full/1410228.jpg");
+    background-size:cover;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+#pr3 {
+    background-image: url("https://wallpaperaccess.com/full/1410228.jpg");
+    background-size:cover;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+#pr4 {
+    background-image: url("https://wallpaperaccess.com/full/1410228.jpg");
+    background-size:cover;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+#pr5 {
+    background-image: url("https://wallpaperaccess.com/full/1410228.jpg");
+    background-size:cover;
+    border: 4px solid rgb(0, 128, 87);
+}
+
+/*display inline and change size*/
+.contact {
+    height: 50px;
+    width: auto;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address h3 {
+    width: 30%;
+    
+}
+
+.address div {
+    display: flex;
+    width: 70%;
+}

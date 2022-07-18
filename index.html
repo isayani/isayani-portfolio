@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <!--add in media tags, make sure to test responsivity-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insha Sayani Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -13,32 +14,57 @@
       <h1>INSHA SAYANI</h1>
       <nav>
         <ul>
-          <!--think about making a sticky arrow href to Home-->
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <!--make home invisible on nav-->
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="about">
-        <h2>ABOUT</h2>
+      <article>
+        <h2>BOLD BRIGHT & <!--&nbsp;--> BALANCED</h2>
+        <p>Hi, I'm Insha and I create stylistic and responsive websites.</p>
+        <a href="#portfolio">view my work</a>
+      </article>
+
+      <section>
+        <h3 class="headings">ABOUT</h3>
+        <div>
+          <img src="./assets/images/IMG_4303.jpg" alt="image of Insha Sayani">
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
       </section>
 
-      <section id="portfolio">
-        <h2>PORTFOLIO</h2>
+      <section>
+        <h3 class="headings">PORTFOLIO</h3>
+        <ul class="content">
+          <li id="pr1"><a href="#">Project 1</a></li>
+          <li id="pr2"><a href="#">Project 2</a></li>
+          <li id="pr3"><a href="#">Project 3</a></li>
+          <li id="pr4"><a href="#">Project 4</a></li>
+          <li id="pr5"><a href="#">Project 5</a></li>
+        </ul>
       </section>
-
-      <section id="contact">
-        <h2>CONTACT</h2>
-      </section>
+      
+      <!-- link to actual contact pages,mail to:, copy phone number-->
+      <adress class="address">
+        <h3 class="headings">CONTACT</h3>
+        <div>
+          <img class="contact" src="./assets/images/phone.png" alt="phone icon">
+          <img class="contact" src="./assets/images/mail.png" alt="mail icon">
+          <img class="contact" src="./assets/images/github.png" alt="github icon">
+          <img class="contact" src="./assets/images/linkedin.png" alt="linkedin icon">
+        </div>
+        </adress>
     </main>
 
-    <!--Might have an aside refer to wireframe-->
-    <aside></aside>
-
-    <footer></footer>
+    <!--make img sticky and clickable to home-->
+    <footer>
+      <h4>© ISAYANI CREATIVE SERVICES</h4>
+      <!-- <button onclick="topFunction()" id="button" title="Go to top"><img src="./assets/images/arrow.png" alt="arrow pointing up"></button> -->
+    </footer>
   </body>
 </html>
