@@ -156,6 +156,7 @@ section li {
     background-size:cover;
     border: 4px solid rgb(0, 128, 87);
     min-width: 1000px;
+    min-height: 500px;
 }
 
 #pr2 {
