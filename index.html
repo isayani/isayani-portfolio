@@ -7,30 +7,35 @@
     <title>Insha Sayani Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/script.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>INSHA SAYANI</h1>
+      <h1 id="home">INSHA SAYANI</h1>
       <nav>
-        <ul>
-          <!--make home invisible on nav, fix links-->
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
+        <ul class="nav-menu">
+          <li id="about-nav" class="nav-item"><a href="#about">about</a></li>
+          <li id="about-port" class="nav-item"><a href="#portfolio">portfolio</a></li>
+          <li id="about-cont" class="nav-item"><a href="#contact">contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <article>
-        <h2>BOLD BRIGHT & <!--&nbsp;--> BALANCED</h2>
+        <h2>BOLD BRIGHT & BALANCED</h2>
         <p>Hi, I'm Insha and I create stylistic and responsive websites.</p>
         <a href="#portfolio">view my work</a>
+        <a href="#home"><img id="arrow" src="./assets/images/arrow.png" alt="back to top arrow"></a>
       </article>
 
-      <section class="about">
+      <section id="about" class="about">
         <h3 class="headings">ABOUT</h3>
         <div class="about-content">
           <img id="about-image" src="./assets/images/IMG_4303.jpg" alt="image of Insha Sayani">
@@ -40,33 +45,29 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <h3 class="headings">PORTFOLIO</h3>
-        <ul class="content">
-          <a href="#"><li id="pr1">Project 1</li></a>
-          <a href="#"><li id="pr2">Project 2</li></a>
-          <a href="#"><li id="pr3">Project 3</li></a>
-          <a href="#"><li id="pr4">Project 4</li></a>
-          <a href="#"><li id="pr5">Project 5</li></a>
+        <ul class="projects content">
+          <a href="https://isayani.github.io/accessibility-coderefactor/"><li id="pr1">Horiseon: CSS Refactor</li></a>
+          <a href="https://isayani.github.io/css-snippet/"><li id="pr2">CSS Snippet Cheat Sheet</li></a>
+          <a href="https://urbnsage.com/password"><li id="pr3">URB+SAGE Apothecary</li></a>
+          <a href="https://isayani.github.io/termsSite/"><li id="pr4">10 Web Development Terms</li></a>
         </ul>
       </section>
       
-      <!-- link to actual contact pages,mail to:, copy phone number-->
-      <section class="address">
+      <section id="contact" class="address">
         <h3 class="headings">CONTACT</h3>
         <div class="content">
-          <img class="contact" src="./assets/images/phone.png" alt="phone icon">
-          <img class="contact" src="./assets/images/mail.png" alt="mail icon">
-          <img class="contact" src="./assets/images/github.png" alt="github icon">
-          <img class="contact" src="./assets/images/linkedin.png" alt="linkedin icon">
+          <a href="tel:9546703212"><img class="contact" src="./assets/images/phone.png" alt="phone icon"></a>
+          <a href="mailto:isayani95@gmail.com"><img class="contact" src="./assets/images/mail.png" alt="mail icon"></a>
+          <a href="https://github.com/isayani"><img class="contact" src="./assets/images/github.png" alt="github icon"></a>
+          <a href="https://linkedin.com/in/inshasayani"><img class="contact" src="./assets/images/linkedin.png" alt="linkedin icon"></a>
         </div>
       </section>
     </main>
 
-    <!--make img sticky and clickable to home-->
     <footer>
       <h4>© ISAYANI CREATIVE SERVICES</h4>
-      <!-- <button onclick="topFunction()" id="button" title="Go to top"><img src="./assets/images/arrow.png" alt="arrow pointing up"></button> -->
     </footer>
   </body>
 </html>
